@@ -1,33 +1,70 @@
-
-.main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1px;
-    flex-wrap: wrap;
-    border: 5px rgb(182,99,175) solid;
+body {
+    font-family: cursive;
+    font-variant: small-caps;
+    
+}
+.button , .op, .equal, .clear{
+    width: 80px;
+    height: 90px;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    font-size: large;
     border-radius: 5px;
 }
 
-.button , .op, .equal, .clear{
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    margin: 5px;
+.clear{
+    background-color: rgb(240, 121, 121);
+}
+.clear:hover{
+    background-color: rgb(229, 91, 91);
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 400px;
-    height: 400px;
+.button:hover {
+    background-color: rgb(148, 142, 146);
+}
+
+.op{
+    background-color: rgb(223, 205, 219);
+}
+.op:hover{
+    background-color: rgb(247, 191, 235);
+}
+.equal{
+    background-color: rgb(123, 225, 126);
+}
+.equal:hover{
+    background-color: rgb(106, 175, 108);
 }
 
 .display{
-    border: 5px rgb(182,99,175) solid;
+    border: 2px rgb(108, 103, 107) solid;
     border-radius: 5px;
     padding: 20px;  
     text-align: right;
+    font-size: 30px;
+}
 
+.main{
+    display: flex;
+    flex-direction: row;
+    border: 2px rgb(72, 69, 72) solid;
+    border-radius: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 450px;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin: 50px;
 }
