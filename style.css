@@ -1,0 +1,33 @@
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1px;
+    flex-wrap: wrap;
+    border: 5px rgb(182,99,175) solid;
+    border-radius: 5px;
+}
+
+.button , .op, .equal, .clear{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.display{
+    border: 5px rgb(182,99,175) solid;
+    border-radius: 5px;
+    padding: 20px;  
+    text-align: right;
+
+}

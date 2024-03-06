@@ -39,6 +39,7 @@ const equal = document.querySelector(".equal")
 
 const buttons = Array.from(document.querySelectorAll(".button"))
 const operations = Array.from(document.querySelectorAll(".op"))
+const clear = document.querySelector(".clear")
 var display = document.querySelector(".display")
 var temp = 0
 var count = 0
@@ -91,4 +92,14 @@ equal.addEventListener('click', ()=>{
     display.textContent = firstNumber
     secondNumber = ""
     operator = ""
+})
+
+clear.addEventListener('click', ()=>{
+    display.textContent = 0
+    firstNumber = ""
+    secondNumber = ""
+    operator = ""
+    query = ""
+    temp = 0
+    count = 0
 })
